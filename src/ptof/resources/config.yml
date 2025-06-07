@@ -1,0 +1,29 @@
+demo: true
+imap: # 邮箱配置
+  host: imap.qq.com                       # IMAP server host
+  port: 993                               # IMAP server port (通常SSL使用993)
+  username: somebody@foo.bar         # 邮箱用户名
+  password: password              # 邮箱密码
+
+email_criteria: #
+  sender: 'somebody@foo.bar'         # 指定发件人
+
+attachments: # 附件配置
+  file_ext: '.pdf'                        # PDF 不区分大小写
+  save_path: './data/downloads/'          # PDF保存路径
+  # filename_prefix: 'email_attachment_'    # 附件保存名前缀
+
+parse_results:
+  output: './data/output.xlsx'            # 输出Excel文件路径
+
+upload_server: # 保存服务配置
+  host: ip_or_host                          # FTP server host
+  port: 21                                  # FTP端口
+  username: username                           # FTP用户名
+  password: password                             # FTP密码
+  upload_path: upload_path                       # 上传路径
+  encoding: 'utf-8'                         # 上传编码，如果上传后文件为乱码，可尝试修改为 gb2312
+
+log: # 日志
+  level: 'debug'                             # 日志级别：debug, info, warning, error
+  output: './data/log_{time:YYYYMMDD}.txt'   # 日志保存路径

@@ -1,0 +1,17 @@
+BeautifulSoup4
+pandas
+pyyaml
+openpyxl
+loguru
+click
+pystray
+setuptools
+
+# Pdf processing libraries
+pypdf[full]
+pdfplumber
+PyMuPDF
+
+## LLM libraries
+pymupdf4llm
+llama-index
